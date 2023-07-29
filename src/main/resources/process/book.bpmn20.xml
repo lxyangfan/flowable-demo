@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:flowable="http://flowable.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.flowable.org/processdef">
+  <process id="book" name="book" isExecutable="true">
+    <startEvent id="sid-400521eb-df3a-429f-839b-a1d440387262"/>
+    <userTask id="sid-0503ad05-be82-4b40-ab3b-df8ac01d5fbe" name="user input book info">
+      <extensionElements>
+        <flowable:formProperty id="bookid"/>
+        <flowable:formProperty id="Property 2"/>
+      </extensionElements>
+    </userTask>
+    <sequenceFlow id="sid-ec867f31-9b8a-48fb-aced-7e8107100979" sourceRef="sid-400521eb-df3a-429f-839b-a1d440387262" targetRef="sid-0503ad05-be82-4b40-ab3b-df8ac01d5fbe"/>
+  </process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_book">
+    <bpmndi:BPMNPlane bpmnElement="book" id="BPMNPlane_book">
+      <bpmndi:BPMNShape id="shape-4f6ac62f-5d9f-4fab-ab9e-b57ee00a14d5" bpmnElement="sid-400521eb-df3a-429f-839b-a1d440387262">
+        <omgdc:Bounds x="-451.5" y="-209.0" width="30.0" height="30.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="shape-72acfb22-34b1-4ab8-9f27-ecdb87950801" bpmnElement="sid-0503ad05-be82-4b40-ab3b-df8ac01d5fbe">
+        <omgdc:Bounds x="-374.0" y="-234.0" width="100.0" height="80.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="edge-ddca3d94-5229-40f8-b604-c1f27c505213" bpmnElement="sid-ec867f31-9b8a-48fb-aced-7e8107100979">
+        <omgdi:waypoint x="-421.5" y="-194.0"/>
+        <omgdi:waypoint x="-374.0" y="-194.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>
